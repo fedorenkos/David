@@ -1,0 +1,617 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+section
+	position: relative
+	background-size: cover
+	background-position: center
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+	padding: 0	
+
+h1, h2,	h3, h4, h5, h6
+	line-height: 1.4
+	text-transform: uppercase
+	color: $acid-green
+	font-size: 1.750em 
+	text-align: center
+p
+	line-height: 1.4
+	text-align: center
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.container
+	min-width: 320px	
+	max-width: 1252px
+	margin: 0 auto
+	padding: 0 40px
+
+.header
+	width: 100%
+	height: auto
+	padding-top: 40px
+	padding-bottom: 35px
+
+.top_header
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+
+.logo
+	/* padding-left: 50px */
+
+.hamburger
+	padding: 0 
+
+	.hamburger-box
+		width: 34px
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			border-radius: 0
+			width: 34px
+			color: $dark
+			height: 2px
+
+.mm-menu_theme-dark 
+	background: $acid-green
+
+.mm-listitem
+	font-size: 0.875em
+	color: $dark
+	font-family: $font-second
+	text-transform: uppercase
+
+.section1
+	width: 100%
+	min-height: 750px
+	height: auto
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 100% 100%
+	background-attachment: fixed
+	
+.content_sec1
+	display: flex
+	height: 100%
+	position: relative
+	margin: 0 auto
+
+.content1_txt
+	padding-top: 121px
+	font-weight: bold
+
+//SECTION2
+.green_bg
+	width: 100%
+	height: auto
+	background-color: $accent
+
+
+.programm
+	width: 100%
+	display: flex
+	align-items: center
+	
+.progr_left .progr_rght
+	width: 50%
+	padding-bottom: 40px
+	padding-top: 40px
+
+
+.progr_left_txt	
+	font-family: $font-second
+	font-weight: bold
+	font-size: 1.250em
+	color: $white
+	
+	
+
+.progr_rght 
+	margin-left: 60px
+	font-size: 1.000em
+.progr_li
+	
+	font-face: $default-font
+	font-size: 1.000em
+	color: $white
+	list-style-type: none
+
+.progr_li::before
+	content: '>'
+	padding-right: 10px	
+//SECTION3
+
+//slider
+.sl_img
+	width: 100%
+	height: auto
+
+.sl
+	max-width: 974px
+	margin: 0 auto
+
+.slick-dots li button
+	border: 1px solid #fff
+	border-radius: 50%
+
+.slick-dots li button::before
+	content: ''
+	background: #fff
+	border-radius: 50%	
+	-webkit-transition: background .3s
+	-o-transition: background .3s
+	transition: background .3s
+
+.slick-prev::before
+	content: '<'
+	color: $acid-green
+	border-radius: 50%
+	font-family: fontawesome
+
+.slick-next::before
+	content: '>'
+	font-weight: Bold	
+	color: $acid-green
+	border-radius: 50%
+	font-family: fontawesome
+
+.slick-prev
+	width: 66px
+	height: 66px
+	border-radius: 50%
+	border: 1px solid $acid-green
+	position: absolute
+	top: 50%
+	left: 30px
+	margin-top: -25px
+	z-index: 1
+
+.slick-next
+	width: 66px
+	height: 66px
+	border-radius: 50%
+	border: 1px solid $acid-green
+	position: absolute
+	top: 51%
+	right: 30px
+	margin-top: -25px
+	z-index: 1
+ 	
+
+.explanation
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding-top: 3.750em
+
+.explanation_p
+	text-align: center
+	font-size: 1.188em
+
+.main_exp
+	width: 100%
+	display: flex
+	padding-top: 47px
+	padding-bottom: 40px
+
+.expl_options_left,
+.expl_options_rght	
+	width: 50%
+
+
+.txts
+	font-face: $default-font
+	font-size: 1.000em
+	list-style-type: none
+
+
+.txts::before
+	content: 'v'
+	padding-right: 10px	
+
+
+.expl_texts_p
+	text-align: center
+	font-size: 0.938em
+	padding-left: 3em
+	padding-right: 3em
+
+.call_bg
+	background: $pale-green
+
+.main_call
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	padding-top: 40px
+	padding-bottom: 40px
+
+.city
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	padding-top: 20px
+	padding-bottom: 20px
+
+.kyiv
+	flex-grow: .2	
+
+.call_btn
+	width: 270px
+	height: 45px
+	border: 1px solid $dark
+	margin: 0
+
+.nmbr
+	color: $dark
+
+.btn-p
+	margin-bottom: 0
+	margin-top: 10px
+	color: $dark	
+	text-transform: uppercase
+
+//SITTING
+.sitting_bg
+	width: 100%
+	height: auto
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	padding-bottom: 95px
+	background-attachment: fixed
+
+.sitting_main
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+	padding-top: 88px
+	
+
+
+.sitting_p1
+	color: $white
+	text-transform: uppercase
+	font-weight: bold	
+	font-size: 1.000em
+
+.sitting_p	
+	color: $white
+	font-size: 0.938em
+
+
+.statistic_img
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
+	flex-wrap: wrap
+	padding-top: 20px
+	padding-bottom: 20px
+	position: relative
+
+.circle p
+	color: $acid-green
+	font-size: 3.125em
+	font-weight: bold
+	position: absolute
+	margin: 40px 45px auto
+	
+.circle .time_txt
+	color: $acid-green
+	font-weight: 200
+	font-size: 1.063em
+
+	margin: 110px 60px auto
+
+.stat-p
+	color: $acid-green
+	font-weight: 400
+
+.span15
+	font-size: 2.188em
+	font-weight: bold
+
+.arg_p
+	font-size: 1.000em	
+	font-weight: bold
+	color: $white
+	text-transform: uppercase
+	padding-top: 60px
+
+.arg_p1
+	font-size: 0.938em
+	color: $white
+
+
+//USEFUL
+
+.useful
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	padding-top: 100px
+	padding-bottom: 80px
+	
+
+.useful_num 
+	width: 100%
+	display: flex
+	alight-items: flex-start
+	margin-right: 60px
+	padding-top: 60px
+
+.useful_num_reverse	
+	width: 100%
+	display: flex
+	alight-items: flex-end
+	padding-top: 60px
+
+
+.number
+	width: 100%
+	display: flex
+	alight-items: flex-start
+	margin-right:  60px
+	position: relative
+
+.number1
+	width: 100%
+	display: flex
+	alight-items: flex-start
+	margin-left:  60px
+	position: relative
+
+.num_txt
+	position: absolute
+	top: 60px
+
+.number_p1
+	text-align: left
+	font-size: 	1.875em
+	color: $dark-mid
+
+.number_p
+	font-family: $default-font
+	font-size: 	0.938em
+	color: $dark-mid
+	text-align: left
+
+.num_link
+	color: $dark
+
+.num_link:hover
+	color: blue
+
+//HOW IT WORKS
+
+.main_hitw
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding-top: 80px
+	padding-bottom: 90px
+
+.three_steps
+	width: 100%
+	display: flex
+	justify-content: space-around
+	align-items: flex-start
+
+
+.st_p	
+	text-align: left
+	font-weight: bold
+	font-size: 1.188em
+	font-family: $font-second
+	margin: 0
+
+
+
+.numerals
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-item: center
+	align-self: stretch
+	padding-top: 80px
+
+.numerals .step
+	width: 60px
+	height: 60px
+	border: 1px solid $acid-green
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	color: $acid-green
+	font-weigth: bold
+	font-size: 1.688em
+	position: relative
+
+    	//&::before, &::after
+    	//content: ""
+    	//width: 100%
+    	//position: absolute
+    	//top: 77%
+    	//transform: translateY(100%)
+    	//border: 1px solid $acid-green
+    	//display: inline-block
+    	//z-index: 1
+
+//METHODIC
+.methodic
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+	padding-top: 60px 
+	padding-bottom: 60px
+
+.main_method
+	display: flex
+	flex-direction: column
+	align-items: space-between
+
+
+.methods
+	width: 100%
+	display: flex
+	align-items: space-between
+	padding-bottom: 80px
+
+.meth_txt
+	display: flex
+	flex-direction: column
+	margin-left: 25px
+	p
+		text-align: left
+
+.meth_txt_p
+	font-size: 1.250em
+	font-weight: bold
+	text-align: left
+	margin: 0
+
+//APPOINTMENT
+
+.appoint_bg
+	background: $light-grey
+
+.appointment
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	padding-top: 70px
+	padding-bottom: 80px
+
+.form
+	width: 100%
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	margin-top: 50px
+
+.contact_form
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	padding-top: 50px
+
+.p_dept
+
+	font-weight: bold
+	position: absolute
+	display: block
+	margin: 0
+	top: 30px
+	font-size: 0.938em
+
+input, select
+	margin: 0 10px 0 0
+	height: 40px
+	border: none
+	padding-left: 20px
+
+.form_btn
+	width: 100%
+	height: auto
+	text-align: center
+
+.btn_form
+	background-color: $acid_green
+	border: none
+	color: $white
+	padding: 0 110px 0 110px
+	padding-top: 5px
+	font-size: 1.125em
+	text-transform: uppercase
+	font-family: $default-font
+
+
+button:active
+	font-family: lighter $default-font
+
+//FOOTER
+
+.footer_bg
+	width: 100%
+	height: auto
+	background-color: $footer
+.footer_p
+	color: $footer-txt
+	font-family: $default-font
+	text-align: left
+	font-size: 0.750em
+@import "media" // Всегда в конце
+
